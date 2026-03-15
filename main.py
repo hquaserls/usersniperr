@@ -29,7 +29,7 @@ is_running: bool = False
 
 SESSION_STRING = os.getenv("SESSION_STRING")  # <- сюда вставляем session string или bot token
 app: Client = Client(
-    session_name=SESSION_STRING or SESSION_NAME,
+    name=SESSION_STRING or SESSION_NAME,
     api_id=API_ID,
     api_hash=API_HASH,
     session_string=SESSION_STRING  # <- это важно, чтобы не спрашивало ввод
