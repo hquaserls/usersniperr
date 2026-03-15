@@ -26,7 +26,13 @@ CHANNEL_ID_FILE = "channel_id.txt"
 snipe_task: asyncio.Task | None = None
 target_username: str | None = None
 is_running: bool = False
-app: Client | None = None
+SESSION_STRING = os.getenv("SESSION_STRING")  # сюда в ENV вставь session string или bot token
+app = Client(
+    "usersnipe",
+    api_id=API_ID,
+    api_hash=API_HASH,
+    session_string=SESSION_STRING
+)
 
 
 def ts():
