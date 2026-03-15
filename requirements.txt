@@ -1,6 +1,2 @@
 telethon
 python-dotenv
-requests
-beautifulsoup4
-pyrogram
-tgcrypto
