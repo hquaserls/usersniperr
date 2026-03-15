@@ -3,3 +3,4 @@ python-dotenv
 requests
 bs4
 pyrogram
+tgcrypto
